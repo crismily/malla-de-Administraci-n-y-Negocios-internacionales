@@ -12,10 +12,26 @@ h1 {
 }
 
 .malla {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
   padding: 20px;
+}
+
+.ciclo {
+  min-width: 250px;
+  background-color: #ffd9ec;
+  border-radius: 10px;
+  padding: 10px;
+  flex-shrink: 0;
+  border: 2px solid #cc007a;
+}
+
+.ciclo h2 {
+  text-align: center;
+  color: #cc007a;
+  font-size: 18px;
+  margin-top: 0;
 }
 
 .curso {
@@ -26,6 +42,8 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 2px 2px 8px #aaa;
+  white-space: pre-line;
+  margin: 10px 0;
 }
 
 .curso:hover {
